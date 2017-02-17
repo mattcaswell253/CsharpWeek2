@@ -8,7 +8,7 @@ namespace RepeatCounterApp
     public class RepeatCounterTest
     {
         [Fact]
-        public void CountRepeats_WordContainsLetter_True()
+        public void InsideWord_WordContainsLetter_True()
         {
             //arrange
             RepeatCounter testObject = new RepeatCounter("smooth", "s");
@@ -17,5 +17,18 @@ namespace RepeatCounterApp
             //assert
             Assert.Equal(count, true );
         }
+
+        [Fact]
+        public void CountRepeats_WordContainsWord_True()
+        {
+            //arrange
+            RepeatCounter testObject = new RepeatCounter("smooth", "smooth");
+            //act
+            bool count =  testObject.InsideWord();
+            //assert
+            Assert.Equal(count, true );
+        }
+
+
     }
 }
