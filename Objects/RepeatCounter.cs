@@ -6,49 +6,15 @@ using System.Collections.Generic;
      public class RepeatCounter
      {
 
-       public string _startingString;
-       public string _lookForWord;
+      public int answer = 0;
 
-
-       public RepeatCounter(string startingString, string lookForWord)
-       {
-         _startingString = startingString;
-         _lookForWord = lookForWord;
-       }
-
-       public bool InsideWord()
-       {
-         if(_startingString.Contains(_lookForWord))
-         {
-           return true;
-         }
-         else
-         {
-           return false;
-         }
-
-       }
-
-      //  public int CountRepeats()
-      //  {
-       //
-      //
-      //    int count1 = 0;
-      //
-      //    for(int i = 0; i < _startingArray.Length; i++)
-      //    {
-      //      if(_startingArray[i] = _lookForArray)
-      //      {
-      //        count++;
-      //      }
-      //    }
-      //    if(count > 0)
-      //    {
-      //      return count;
-      //    }
-       //
-       //
-      //  }
-
-     }
- }
+      public int CountRepeats(string lookWord, string sentence)
+      {
+        if (lookWord != sentence)
+        {
+          answer = 0;
+        }
+        return answer;
+      }
+    }
+  }

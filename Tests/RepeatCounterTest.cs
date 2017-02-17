@@ -11,22 +11,11 @@ namespace RepeatCounterApp
         public void InsideWord_WordContainsLetter_True()
         {
             //arrange
-            RepeatCounter testObject = new RepeatCounter("smooth", "s");
+            RepeatCounter testObject = new RepeatCounter();
             //act
-            bool count =  testObject.InsideWord();
+            int answer =  testObject.CountRepeats("z","y");
             //assert
-            Assert.Equal(count, true );
-        }
-
-        [Fact]
-        public void CountRepeats_WordContainsWord_True()
-        {
-            //arrange
-            RepeatCounter testObject = new RepeatCounter("smooth", "smooth");
-            //act
-            bool count =  testObject.InsideWord();
-            //assert
-            Assert.Equal(count, true );
+            Assert.Equal(answer, 0);
         }
 
 

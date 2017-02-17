@@ -8,18 +8,28 @@
 ## Description
 
 ## Specs
-* _Behavior: User enters a word and a single letter and it tells you if that word contains given letter.
-Input: Smooth, o
-Output: True
-I chose this as my simplest spec because we are just checking to see if a word contains the single letter we are looking for._
+* _Behavior: User enters a letter and another single letter and it tells you how many match
+Input: o, o
+Output: 1
+I chose this as my simplest spec because we are just checking to see if the two letters match._
 
-* _Behavior: User enters word and another word and it checks to see if words are matching
-Input: Smooth, Smooth
-Output: true
+* _Behavior: User enters two letters and they dont match it doesnt count it
+Input: a , b
+Output: 0
 I chose this as my next spec because we want to see if their second word match's the input word._
 
-* _Behavior: User enters multiple word string and another word and it will say how many time that word appears inside of input string.
-Input: everyone was very excited and very nervous, very
+* _Behavior: User enters multiple character word  and another word and it will say if they match.
+Input: bake, back
+Output: 0
+I chose this as the next spec because it seems like there isn't any simpler spec to preform before this one._
+
+* _Behavior: User enters multiple character word  and another word and it will say if they match.
+Input: bake, bake
+Output: 1
+I chose this as the next spec because it seems like there isn't any simpler spec to preform before this one._
+
+* _Behavior: User enters multiple word string and another word and it will say how many times word is inside given string
+Input: baseball, baseball is my favorite sport i love baseball.
 Output: 2
 I chose this as the next spec because it seems like there isn't any simpler spec to preform before this one._
 
