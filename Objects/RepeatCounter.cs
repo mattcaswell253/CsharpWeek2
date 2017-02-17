@@ -16,9 +16,9 @@ using System.Collections.Generic;
         {
           if (lookForWord[i] == lookWord)
           {
-            answer++;
+            answer += 1;
           }
-          else if (lookForWord[i] != lookWord)
+          else
           {
             answer += 0;
           }

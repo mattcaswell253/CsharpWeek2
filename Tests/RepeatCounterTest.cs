@@ -40,7 +40,6 @@ namespace RepeatCounterApp
             Assert.Equal(answer, 1);
         }
 
-
         [Fact]
         public void CountRepeats_wordMatchWithOther_True()
         {
@@ -62,10 +61,5 @@ namespace RepeatCounterApp
             //assert
             Assert.Equal(answer, 2);
         }
-
-
-
-
-
     }
 }
