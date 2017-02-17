@@ -41,6 +41,20 @@ namespace RepeatCounterApp
         }
 
 
+        [Fact]
+        public void CountRepeats_wordMatchWithOther_True()
+        {
+            //arrange
+            RepeatCounter testObject = new RepeatCounter();
+            //act
+            int answer =  testObject.CountRepeats("zoo","zoo was cool");
+            //assert
+            Assert.Equal(answer, 1);
+        }
+
+
+
+
 
     }
 }

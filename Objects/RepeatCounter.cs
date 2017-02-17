@@ -7,17 +7,24 @@ using System.Collections.Generic;
      {
 
       public int answer = 0;
+      public string[] lookForWord;
 
       public int CountRepeats(string lookWord, string sentence)
       {
-        if (lookWord != sentence)
+        lookForWord = sentence.Split();
+        for(int i = 0; i < lookForWord.Length; i++)
         {
-          answer = 0;
+          if (lookForWord[i] == lookWord)
+          {
+            answer++;
+          }
+          else if (lookForWord[i] != lookWord)
+          {
+            answer += 0;
+          }
         }
-        else if (lookWord == sentence)
-        {
-          answer = 1;
-        }
+
+
         return answer;
       }
     }
