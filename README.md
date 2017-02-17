@@ -1,9 +1,9 @@
 
-# _{Application Name}_
+# _Repeat Counter_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Enter a word followed by a sentence to see how many times your word is inside of given sentence_
 
-#### By _**{List of contributors}**_
+#### By _**Matthew Caswell**_
 
 ## Description
 

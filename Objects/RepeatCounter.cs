@@ -23,8 +23,6 @@ using System.Collections.Generic;
             answer += 0;
           }
         }
-
-
         return answer;
       }
     }
