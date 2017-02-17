@@ -29,5 +29,18 @@ namespace RepeatCounterApp
             Assert.Equal(answer, 1);
         }
 
+        [Fact]
+        public void CountRepeats_wordMatch_True()
+        {
+            //arrange
+            RepeatCounter testObject = new RepeatCounter();
+            //act
+            int answer =  testObject.CountRepeats("zoo","zoo");
+            //assert
+            Assert.Equal(answer, 1);
+        }
+
+
+
     }
 }
