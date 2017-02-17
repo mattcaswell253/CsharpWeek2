@@ -14,6 +14,10 @@ using System.Collections.Generic;
         {
           answer = 0;
         }
+        else if (lookWord == sentence)
+        {
+          answer = 1;
+        }
         return answer;
       }
     }

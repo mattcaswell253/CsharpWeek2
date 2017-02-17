@@ -8,7 +8,7 @@ namespace RepeatCounterApp
     public class RepeatCounterTest
     {
         [Fact]
-        public void InsideWord_WordContainsLetter_True()
+        public void CountRepeats_lettersDontMatch_True()
         {
             //arrange
             RepeatCounter testObject = new RepeatCounter();
@@ -18,6 +18,16 @@ namespace RepeatCounterApp
             Assert.Equal(answer, 0);
         }
 
+        [Fact]
+        public void CountRepeats_LettersMatch_True()
+        {
+            //arrange
+            RepeatCounter testObject = new RepeatCounter();
+            //act
+            int answer =  testObject.CountRepeats("z","z");
+            //assert
+            Assert.Equal(answer, 1);
+        }
 
     }
 }
